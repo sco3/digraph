@@ -11,6 +11,8 @@ func main() {
 	dg.AddEdge('a', 'b')
 	dg.AddEdge('a', 'c')
 
-	fmt.Printf("Graph: %s", dg)
+	fmt.Printf("Graph: %s]\n", dg)
+	fmt.Printf("Neighbours: %v\n", dg.Neighbors('a'))
+	dg.Traverse('a')
 
 }
